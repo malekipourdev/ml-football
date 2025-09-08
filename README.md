@@ -235,8 +235,10 @@ ml-football/
 ```bash
 # ایجاد محیط مجازی
 python -m venv .venv
-source .venv/bin/activate  # در لینوکس/مک
-# .venv\Scripts\activate   # در ویندوز
+# در لینوکس/مک
+source .venv/bin/activate
+# در ویندوز
+# .venv\Scripts\activate
 
 # نصب کتابخانه‌ها
 pip install pandas numpy scikit-learn matplotlib seaborn jupyter
@@ -320,17 +322,23 @@ jupyter lab
 
 ### Gradient Boosting (بهترین مدل)
 
-```
-              precision    recall  f1-score   support
-        بد       0.59      0.06      0.11      2187
-       خوب       0.59      0.97      0.73      5772
-   خیلی بد       0.28      0.02      0.03      1690
-      عالی       0.57      0.32      0.41       482
+#### جدول عملکرد تفصیلی
 
-    accuracy                           0.59     10131
-   macro avg       0.51      0.34      0.32     10131
-weighted avg       0.54      0.59      0.47     10131
-```
+| کلاس        | Precision | Recall | F1-Score | Support | درصد از کل |
+| ----------- | --------- | ------ | -------- | ------- | ---------- |
+| **بد**      | 0.59      | 0.06   | 0.11     | 2,187   | 21.6%      |
+| **خوب**     | 0.59      | 0.97   | 0.73     | 5,772   | 57.0%      |
+| **خیلی بد** | 0.28      | 0.02   | 0.03     | 1,690   | 16.7%      |
+| **عالی**    | 0.57      | 0.32   | 0.41     | 482     | 4.8%       |
+
+#### آمار کلی
+
+| معیار                 | مقدار                                   |
+| --------------------- | --------------------------------------- |
+| **Accuracy**          | 0.59                                    |
+| **Macro Average**     | Precision: 0.51, Recall: 0.34, F1: 0.32 |
+| **Weighted Average**  | Precision: 0.54, Recall: 0.59, F1: 0.47 |
+| **تعداد کل نمونه‌ها** | 10,131                                  |
 
 **تفسیر نتایج**:
 
