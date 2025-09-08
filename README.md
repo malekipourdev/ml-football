@@ -18,12 +18,8 @@ ml-football/
 ├── data/
 │   └── data_football_ratings.csv          # مجموعه داده اصلی
 ├── notebookd/
-│   ├── player_rating_classification.ipynb # نوت‌بوک اصلی طبقه‌بندی (انگلیسی)
-│   ├── classification.ipynb               # نوت‌بوک تحلیل تکمیلی
+│   ├── classification.ipynb               # تحلیل دسته بندی
 │   ├── clustering.ipynb                   # تحلیل خوشه‌بندی
-│   └── test.ipynb                         # نوت‌بوک آزمایشی
-├── Football_Player_Clustering_Report.md   # گزارش خوشه‌بندی (انگلیسی)
-├── گزارش_نهایی_پروژه_فوتبال.md            # گزارش نهایی (فارسی)
 └── README.md                              # این فایل
 ```
 
